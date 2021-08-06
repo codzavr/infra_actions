@@ -14,7 +14,7 @@ jobs:
         python-version: 3.8
 
     - name: Install dependencies
-      run:
+      run: |
         # обновление PIP
         python -m pip install --upgrade pip
         # установка flake8 и его плагинов
@@ -23,5 +23,5 @@ jobs:
         pip install -r requirements.txt
 
     - name: Test with flake8 and django tests
-      run:
+      run: |
         python -m flake8
